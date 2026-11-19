@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import { buildWhatsAppEnquiryLink } from "@/lib/whatsapp";
 import {
   ArrowDown,
   ArrowRight,
@@ -676,9 +677,22 @@ function ContactForm({
       setStatus({ kind: "error", text: "Please enter a valid email address." });
       return;
     }
+    const link = buildWhatsAppEnquiryLink({
+      name,
+      email,
+      business,
+      website: String(data.get("websiteUrl") ?? "").trim(),
+      service,
+      budget: String(data.get("projectBudget") ?? "").trim(),
+      description,
+    });
+    // window.open returns null when "noopener" is passed, so clear opener manually.
+    const opened = window.open(link, "_blank");
+    if (opened) opened.opener = null;
+    else window.location.href = link;
     setStatus({
       kind: "success",
-      text: `Thank you, ${name}. Your project details have been received — we’ll be in touch soon.`,
+      text: `Thank you, ${name}. WhatsApp is opening with your project details — just tap send.`,
     });
     form.reset();
     onServiceChange("");
