@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+<!-- AGENT-MEMORY:BEGIN -->
+- The home page is a 1:1 rebuild of the original GrowLane site: its styles live in `src/growlane.css` (original class names, `.gl-container` instead of `.container` to avoid Tailwind's utility) — keep edits there so the look stays identical.
+- Site copy, services, projects and team data live in `src/components/growlane/content.ts`; edit content there, not in the page markup.
+<!-- AGENT-MEMORY:END -->
