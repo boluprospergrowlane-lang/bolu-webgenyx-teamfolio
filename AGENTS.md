@@ -32,4 +32,5 @@ use the editor.
 <!-- AGENT-MEMORY:BEGIN -->
 - The home page is a 1:1 rebuild of the original GrowLane site: its styles live in `src/growlane.css` (original class names, `.gl-container` instead of `.container` to avoid Tailwind's utility) — keep edits there so the look stays identical.
 - Site copy, services, projects and team data live in `src/components/growlane/content.ts`; edit content there, not in the page markup.
+- Site images are plain files in `public/images/` referenced as `/images/...`, not Lovable CDN `.asset.json` pointers — the site is also deployed to Vercel, where `/__l5e/` asset URLs don't resolve.
 <!-- AGENT-MEMORY:END -->

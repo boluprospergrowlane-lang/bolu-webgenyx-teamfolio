@@ -1,14 +1,15 @@
-import heroCommerce from "@/assets/hero-commerce.webp.asset.json";
-import jewelryStilllife from "@/assets/jewelry-stilllife.webp.asset.json";
-import fashionEditorial from "@/assets/fashion-editorial.webp.asset.json";
-import storefrontMockup from "@/assets/storefront-mockup.webp.asset.json";
-import productPageSample from "@/assets/product-page-sample.webp.asset.json";
-import ecommerceHomepage from "@/assets/ecommerce-homepage-sample.webp.asset.json";
-import conversionSample from "@/assets/conversion-optimization-sample.webp.asset.json";
-import boluPhoto from "@/assets/bolu-prosper.png.asset.json";
-import webgenyxPhoto from "@/assets/webgenyx.png.asset.json";
-import festusPhoto from "@/assets/festus-zentryve.jpg.asset.json";
-import marcusPhoto from "@/assets/marcus-chen.jpg.asset.json";
+// Images live in /public/images so they load on any host (Lovable, Vercel, etc.).
+const heroCommerce = { url: "/images/hero-commerce.webp" };
+const jewelryStilllife = { url: "/images/jewelry-stilllife.webp" };
+const fashionEditorial = { url: "/images/fashion-editorial.webp" };
+const storefrontMockup = { url: "/images/storefront-mockup.webp" };
+const productPageSample = { url: "/images/product-page-sample.webp" };
+const ecommerceHomepage = { url: "/images/ecommerce-homepage-sample.webp" };
+const conversionSample = { url: "/images/conversion-optimization-sample.webp" };
+const boluPhoto = { url: "/images/bolu-prosper.webp" };
+const webgenyxPhoto = { url: "/images/webgenyx.webp" };
+const festusPhoto = { url: "/images/festus-zentryve.jpg" };
+const marcusPhoto = { url: "/images/marcus-chen.jpg" };
 
 export const heroImage = heroCommerce.url;
 
