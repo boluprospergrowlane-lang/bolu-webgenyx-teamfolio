@@ -15,7 +15,7 @@ describe("WhatsApp enquiry link", () => {
   });
 
   it("includes the visitor's form details in the message", () => {
-    const text = decodeURIComponent(buildWhatsAppEnquiryLink(enquiry).split("?text=")[1]);
+    const text = decodeURIComponent(buildWhatsAppEnquiryLink(enquiry).split("?text=")[1] ?? "");
     expect(text).toContain("Name: Ada Obi");
     expect(text).toContain("Email: ada@example.com");
     expect(text).toContain("Service: Shopify Store Design");
