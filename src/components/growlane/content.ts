@@ -184,7 +184,7 @@ export const team: TeamMember[] = [
   {
     name: "WEBGENYX",
     role: "Web Developer",
-    text: "Focuses on website development, technical implementation, and creating functional digital experiences.",
+    text: "Specializes in professional website design and development for jewelry businesses, creating elegant, modern, and user-friendly online stores that beautifully showcase jewelry collections, attract potential customers, and help brands grow their online presence and sales.",
     note: "Social profile link to be added",
     photo: webgenyxPhoto.url,
     photoPosition: "center 12%",
