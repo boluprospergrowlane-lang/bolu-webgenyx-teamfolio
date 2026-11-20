@@ -169,6 +169,8 @@ export type TeamMember = {
   text: string;
   note: string;
   photo: string;
+  /** Optional one-line skills list shown under the bio. */
+  skills?: string;
   /** CSS object-position so the face sits well inside the card. */
   photoPosition: string;
 };
@@ -210,6 +212,8 @@ export const team: TeamMember[] = [
     name: "Zohaib Hassan",
     role: "Full-Stack Web & Mobile App Developer",
     text: "Specializes in web and mobile app development, building e-commerce platforms, educational systems, and custom digital solutions using modern technologies.",
+    skills:
+      "Core skills: Laravel, PHP, MySQL, Flutter, REST API Integration, and Responsive Web Development.",
     note: "Social profile link to be added",
     photo: zohaibPhoto.url,
     photoPosition: "center 22%",

@@ -471,6 +471,7 @@ function Home() {
                     <span className="team-role">{m.role}</span>
                     <h3>{m.name}</h3>
                     <p>{m.text}</p>
+                    {m.skills ? <span className="team-skills">{m.skills}</span> : null}
                     <span className="profile-link-placeholder">{m.note}</span>
                   </div>
                 </article>
